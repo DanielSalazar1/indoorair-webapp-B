@@ -24,6 +24,5 @@ urlpatterns = [
     path('', include('foundations.urls')),
     path('', include('userprofile.urls')),
     path('', include('instrument.urls')),
-    path('', include('report.urls')),
     path('', include('sensor.urls')),
 ]

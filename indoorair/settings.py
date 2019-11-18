@@ -38,13 +38,13 @@ INSTALLED_APPS = [
     'gateway.apps.GatewayConfig',
     'homepage.apps.HomepageConfig',
     'report.apps.ReportConfig',
-    'sensor.apps.SensorConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'sensor.apps.SensorConfig',
 
     # Rest Framework
     'rest_framework',
@@ -132,7 +132,7 @@ STATIC_URL = '/static/'
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        #'foundations.drf.custom_authentication.CsrfExemptSessionAuthentication',
+        'foundations.drf.custom_authentication.CsrfExemptSessionAuthentication',
     ),
     'DEFAULT_FILTER_BACKENDS': (
         # PLACE FILTERING CLASSES HERE.
