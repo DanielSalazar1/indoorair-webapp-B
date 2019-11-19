@@ -19,7 +19,7 @@ function onPageLoadRunGetInstrumentDetailsFromAPI(instrument_id) {
             generateViewFromObject(dataObj);
         }
     }
-    const detailURL = "/api/instrument/"+instrument_id.toString();
+    const detailURL = "???"+instrument_id.toString();
     console.log(detailURL);
     xhttp.open("GET", detailURL, true);
     xhttp.send();

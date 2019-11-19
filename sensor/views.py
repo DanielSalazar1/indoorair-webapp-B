@@ -6,12 +6,10 @@ from foundations.models import Instrument, TimeSeriesDatum, Sensor
 from .serializers import SensorSerializer
 
 def retrieve_page(request, id):
-    return render(request, "sensor/retrieve.html", {
-        "instrument_id": int(id),
-    })
+    return render(request, "sensor/retrieve.html", {})
 
 
-class InstrumentRetrieveAPI(views.APIView):
+class SensorRetrieveAPI(views.APIView):
    def get(self, request):
 
        serializer = AddSerializer(data = request.data)
